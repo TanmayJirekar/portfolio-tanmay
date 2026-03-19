@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <canvas id="bgCanvas"></canvas>
+    <style>
+        #spline-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+#spline-bg spline-viewer {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+    </style>
+  
+<!-- Canvas Particles -->
+<canvas id="bgCanvas"></canvas>
     <!-- Terminal Header -->
     <div class="terminal-header">
         <div class="terminal-buttons">
@@ -39,7 +57,7 @@
 
     <!-- Home Section -->
     <section id="home" class="home">
-        <div class="container hero-content">
+          <div class="container hero-content">
             <div class="glitch-wrapper">
                 <h1 class="glitch" data-text="Tanmay Jirekar">Tanmay Jirekar</h1>
             </div>
